@@ -14,6 +14,13 @@ namespace CSAdv31
         }
     }
 
+    class WantedTest<T, U>
+           where T : IComparable
+           where U : IComparable, IDisposable
+    {
+
+    }
+
     internal class Program
     {
         static void Main(string[] args)
@@ -25,6 +32,8 @@ namespace CSAdv31
             Console.WriteLine(wantedString.Value);
             Console.WriteLine(wantedInt.Value);
             Console.WriteLine(wantedDouble.Value);
+
+            
         }
     }
 }
